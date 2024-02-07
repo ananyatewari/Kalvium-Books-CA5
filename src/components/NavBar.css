@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(248, 197, 121);
+    background-color: rgb(255, 233, 199);
+    box-shadow: 0px 5px 30px rgb(66, 54, 4);
+    padding-right: 4vh;
+    background-image: url("../assets/navbg.jpg");
+}
+
+nav span {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.5vh;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0.908);
+    border-radius: 1vh;
+    padding: 1vh;
+    user-select: none;
+}
+
+nav div img {
+    height: 12vh;
+    width: auto;
+    background-color: white;
+    margin: 2vh;
+}
+
+nav input {
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px #844600;
+    margin: 3vh;
+    width: 40vw;
+    padding: 1vh 2vh 1vh 2vh;
+    border-radius: 2vh;
+}
+
+nav input:hover {
+    transform: scale(1.02);
+    transition-duration: 0.5s;
+}
+
+nav input:not(:hover) {
+    transition-duration: 0.5s;
+}
+
+nav button {
+    padding: 1vh 2vh 1vh 2vh;
+    color: white;
+    border-radius: 1vh;
+    box-shadow: 4px 3px 8px #5b2005;
+    background-image: linear-gradient(to right, #ce4100, #441e12);
+    transition: background-color 0.5s;
+    box-shadow: 2px 3px 0px white;
+}
+
+nav button:hover {
+    transform:scale(1.06);
+    transition-duration: 0.3s;
+    box-shadow: 0px 0px 30px white;
+}
+
+@media (max-width: 900px) {
+    nav span {
+        display: none;
+    }
+}
+
+@media (max-width: 530px) {
+    nav input {
+        width: 25vw;
+    }
+    nav div img {
+        width: 30vw;
+        height: auto;
+    }
+    nav button {
+        font-size: 2vh;
+    }
+}

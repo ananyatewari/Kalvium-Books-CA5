@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+div.eachbook {
+    /* height: 30vh; */
+    width: 40vh;
+    margin: 9vh;
+    background-color: rgb(248, 251, 254);
+    padding: 4vh;
+    font-size: 3vh;
+    font-family: monospace;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.59);
+    border-radius: 1vh;
+}
+
+div.eachbook:hover {
+    box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.805);
+    transition-duration: 0.2s;
+}
+
+div.eachbook img {
+    height: 40vh;
+    width: 30vh;
+    margin: 2vh 0vh 2vh 0vh;
+}
+
+div.eachbook span {
+    font-size: 3vh;
+}
+
+div#notfound {
+    color: red;
+    font-family: "Pacifico";
+    font-family: 'Honk', system-ui;
+    font-size: 6vh;
+    margin: 5vh;
+    text-align: center;
+}
