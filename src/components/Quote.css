@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+* {
+    overflow-x:hidden;
+
+}
+
 section {
     background-size: cover;
     margin: 16vh 1vh 6vh 1vh;
     animation: smoothslide 5.5s infinite ease-in;
     display: flex;
     justify-content: center;
+    overflow-x:hidden;
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x:hidden;
 }
 
 section div {
@@ -50,6 +56,6 @@ section div {
 
 @media (max-width: 500px) {
     section div {
-        font-size: 1.8vh;
+        font-size: 1vh;
     }
 }

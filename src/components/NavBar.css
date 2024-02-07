@@ -72,12 +72,13 @@ nav button:hover {
 @media (max-width: 530px) {
     nav input {
         width: 25vw;
+        font-size: 1vh;
     }
     nav div img {
         width: 30vw;
         height: auto;
     }
     nav button {
-        font-size: 2vh;
+        font-size: 1.5vh;
     }
 }
