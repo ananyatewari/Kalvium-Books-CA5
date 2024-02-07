@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-* {
-    overflow-x:hidden;
-
-}
+/*  {
+     overflow-x:hidden; 
+     overflow-y: hidden; 
+} */
 
 section {
     background-size: cover;
@@ -16,6 +16,7 @@ section {
 
 body {
     overflow-x:hidden;
+    /* overflow-y: scroll; */
 }
 
 section div {
