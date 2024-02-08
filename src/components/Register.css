@@ -11,15 +11,18 @@ div.box {
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
+    margin-top: 15vh;
+    /* position: relative;
+    z-index: 3; */
 }
 
 div.box form {
     backdrop-filter: blur(25px);
     border-radius: 8vh;
-    padding: 5vh 7vh 4vh 7vh;
+    padding: 2vh 7vh 4vh 7vh;
     color: #ffffff;
     /* width: max-content; */
-    margin: 10vh 0vh 14vh 0vh;
+    margin: 15vh 0vh 14vh 0vh;
     text-align: center;
     box-shadow: 2px 2px 10px white;
 }

@@ -7,7 +7,7 @@
 
 section {
     background-size: cover;
-    margin: 16vh 1vh 6vh 1vh;
+    margin: 25vh 1vh 6vh 1vh;
     animation: smoothslide 5.5s infinite ease-in;
     display: flex;
     justify-content: center;
