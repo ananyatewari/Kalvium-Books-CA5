@@ -24,7 +24,7 @@ export default function Footer() {
   };
 
   useEffect(() => {
-    const next = setInterval(gallery, 5500);
+    const next = setInterval(gallery, 7000);
     return () => clearInterval(next);
   });
 

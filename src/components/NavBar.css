@@ -60,6 +60,7 @@ nav button {
     background-image: linear-gradient(to right, #ce4100, #441e12);
     transition: background-color 0.5s;
     box-shadow: 2px 3px 0px white;
+    overflow-y: hidden;
 }
 
 nav button:hover {
@@ -74,7 +75,7 @@ nav button:hover {
     }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 550px) {
     nav input {
         width: 25vw;
         font-size: 1vh;
@@ -85,5 +86,11 @@ nav button:hover {
     }
     nav button {
         font-size: 1.5vh;
+    }
+}
+
+@media (max-width: 390px) {
+    nav button {
+        font-size: 1vh;
     }
 }

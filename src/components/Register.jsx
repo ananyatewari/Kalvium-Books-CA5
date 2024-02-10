@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, createContext } from "react";
 import "./Register.css";
 import NavBar from "./NavBar";
 import { useForm } from "react-hook-form";
 
-export default function Register({ input, showInput }) {
+export let Data = createContext();
+
+export function Register({ input, showInput }) {
   const [submission, setSubmission] = useState(false);
-  const [save, setSave] = useState({});
+  const [save, setInputSave] = useState({});
+
   const {
     register,
     handleSubmit,
@@ -15,17 +18,20 @@ export default function Register({ input, showInput }) {
 
   const doneSubmission = (input) => {
     setSubmission(true);
-    setSave(input);
+    setInputSave(input);
+    let store = localStorage.setItem("username", input.name);
   };
 
   useEffect(() => {
     console.log(save);
-  });
+  }, [save]);
 
   return (
     // this is for the registration form which makes use of regex for input validation
     <>
-      <NavBar />
+      {/* <Data.Provider value={save.name}> */}
+        <NavBar />
+      {/* </Data.Provider> */}
       <div className="box">
         <form
           action=""

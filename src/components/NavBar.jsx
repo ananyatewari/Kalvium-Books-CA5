@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 import Quote from "./Quote";
+import { Data } from "./Register";
 
 export default function NavBar({ input, showInput, result, setResult }) {
-  // based on whether we are on the library page or the register page, we check whther we have to display the search bar or not
+  let storageData = localStorage.getItem("username"); //this helps me pick the username entered while registration to display on the navbar
+  const [name, setName] = useState(storageData);
+
+  // let username = useContext(Data);
+
+  useEffect(() => {
+    console.log("This is the name of our book client-", name);
+  }, [name]);
+
+  // based on whether we are on the library page or the register page, it checks whther it has to display the search bar or not
   return (
     <>
       {input ? (
@@ -17,15 +27,22 @@ export default function NavBar({ input, showInput, result, setResult }) {
             <div>
               {/* <span>START SEARCHING 🔍</span> */}
               <input
-              placeholder="Start looking 🔍"
+                placeholder="Start looking 🔍"
                 type="search"
                 value={result}
                 onChange={(e) => setResult(e.target.value)}
               />
             </div>
             <div>
-              <Link to={"/register"} onClick={() => showInput(false)}>
-                <button className="transition duration-100">Register</button>
+              <Link
+                to={"/register"}
+                onClick={() => {
+                  showInput(false);
+                }}
+              >
+                <button className="transition duration-100">
+                  {name ? `Welcome ${name}👋` : "Register"}
+                </button>
               </Link>
             </div>
           </nav>
