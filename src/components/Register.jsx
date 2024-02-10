@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Register.css";
 import NavBar from "./NavBar";
 import { useForm } from "react-hook-form";
 
 export default function Register({ input, showInput }) {
   const [submission, setSubmission] = useState(false);
+  const [save, setSave] = useState({});
   const {
     register,
     handleSubmit,
@@ -14,10 +15,15 @@ export default function Register({ input, showInput }) {
 
   const doneSubmission = (input) => {
     setSubmission(true);
+    setSave(input);
   };
 
+  useEffect(() => {
+    console.log(save);
+  });
+
   return (
-    // this is for the registration form which makes use of regex for input validation 
+    // this is for the registration form which makes use of regex for input validation
     <>
       <NavBar />
       <div className="box">

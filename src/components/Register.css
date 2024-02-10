@@ -87,6 +87,7 @@ button#register:not(:hover) {
     div.box form {
         margin-right: 4vh;
         margin-left: 4vh;
+        margin-top: 20vh;
     }
     form input {
         width: 55vw;
@@ -107,10 +108,10 @@ button#register:not(:hover) {
     }
     
 }
-/* 
+
 @media (max-width: 400px) {
-    div.box form {
-        height: 80vh;
+    form h1 {
+        font-size: 3vh;
     }
     
-} */
+}
