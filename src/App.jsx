@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import "./App.css"
 
+// this is sent to manage the state of navbar (the search bar primarily)
 export default function App() {
   const [input, showInput] = useState(true);
 

@@ -3,6 +3,7 @@ import "./Quote.css";
 
 export default function Footer() {
   const [index, setIndex] = useState(0);
+  // this is a simple random quote display component
 
   const quotes = [
     '"Show me a family of readers, and I will show you the people who move the world." – Napoleon Bonaparte',

@@ -9,6 +9,7 @@ export default function Library({ input, showInput }) {
 
   useEffect(() => {
     axios
+    // use of api to fetch data of the books
       .get("https://reactnd-books-api.udacity.com/books", {
         headers: { "Authorization": "whatever-you-want" },
       })
@@ -35,6 +36,7 @@ export default function Library({ input, showInput }) {
         ) : (
           bookdata
             .filter((item) => {
+              // searches for books based on the user's input
               return item.title.toLowerCase().includes(result.toLowerCase());
             })
             .map((book) => (

@@ -17,6 +17,7 @@ export default function Register({ input, showInput }) {
   };
 
   return (
+    // this is for the registration form which makes use of regex for input validation 
     <>
       <NavBar />
       <div className="box">

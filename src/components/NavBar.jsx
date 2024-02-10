@@ -5,6 +5,7 @@ import "./NavBar.css";
 import Quote from "./Quote";
 
 export default function NavBar({ input, showInput, result, setResult }) {
+  // based on whether we are on the library page or the register page, we check whther we have to display the search bar or not
   return (
     <>
       {input ? (
