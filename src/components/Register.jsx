@@ -98,7 +98,7 @@ export default function Register({ input, showInput }) {
           <h3>{errors.confirm?.message}</h3>
           <br />
           <button id="register" type="submit">
-            Register
+            Sign up
           </button>
         </form>
       </div>
